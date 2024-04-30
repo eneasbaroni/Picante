@@ -1,0 +1,53 @@
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    border-bottom: var(--main-border);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding: 0 5rem;
+    z-index: 99;
+    background-color: var(--main-bg);
+
+    @media screen and (max-width: 768px) {
+        padding: 0 0.5rem;
+    }
+
+    h1 {
+        grid-column: 2 / span 10;
+        text-align: center;
+        font-size: calc(1rem + 2vw);
+    }
+
+    button {
+        grid-column: 12 / span 1;
+        text-align: center;
+        font-size: calc(1rem + 1vw);
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+}
+
+.closeBtn {
+    position: fixed;
+    color: var(--second-color);
+    /* grid-column: 11 / span 2; */
+    /* margin: 1rem; */
+    cursor: pointer;
+    padding: 0 1rem;
+    top: 0rem;
+    left: calc(60vw - 3px);
+    text-align: center;
+    border-top: none;
+    border-left: none;
+    border-right: var(--second-border);
+    border-bottom: var(--second-border);
+    box-shadow: none;
+    background-color: var(--second-bg);
+    z-index: 99;
+
+    @media screen and (max-width: 768px) {
+        left: calc(100vw - 45px - 3px);
+    }
+}

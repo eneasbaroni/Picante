@@ -1,0 +1,420 @@
+#curso {
+    scroll-behavior:smooth;
+    
+    * {
+        text-align: center;       
+    }
+
+    .titlesContainer {
+        margin-top: 1rem;
+
+        h3 {
+            font-family: 'Titillium Web', sans-serif; 
+            font-size: calc(1rem + 1vw);
+            font-weight: 400;
+        }
+    }
+
+    .video {        
+        padding: 2rem;
+        margin: 2rem auto;
+        display: block;
+        width: 70%;
+        height: auto;
+        background-color: var(--main-bg);
+        border: var(--main-border);
+        box-shadow: 10px 10px 0 0 var(--main-color);
+
+        @media (max-width: 768px) {
+            padding: 1rem;
+        }
+
+        @media (max-width: 576px) {
+            width: 90%;
+            padding: 0.5rem;
+        }
+        
+    }
+
+    .init {
+        margin: 2rem 1rem 0;
+        p {
+            max-width: 800px;
+            margin: 1rem auto 0;
+        }
+    }
+
+    #indice {
+        margin: 2rem 2rem 0;
+        border-top: 2px solid var(--main-color);      
+        padding-top: 5rem;
+        margin: 1rem auto 0;
+        display: flex;
+        flex-direction: column;       
+        
+        h3 {           
+            font-size: calc(1rem + 1.5vw);
+            font-weight: 400;
+            color: var(--second-color); 
+        }
+
+        a {
+            /* grid-column: auto / span 10; */
+            padding: 1rem;
+            margin: 1rem;
+            text-align: center;  
+            border: var(--second-border);
+            box-shadow: 7px 7px 0 0 var(--second-color);
+            color: var(--second-color);   
+            font-size: calc(1rem + 1vw);  
+            width: 800px;
+            margin: 0.5rem auto;
+            font-weight: 400;
+            font-family: 'Anton', sans-serif;
+
+            @media (max-width: 832px) {
+                width: 90%;
+                margin: 0.5rem auto;
+            }
+        }
+        
+        a:hover { 
+            box-shadow: none;   
+            transform: translate(7px, 7px);
+        }
+    }
+
+    .indiceBtn {
+        padding: 0.5rem 1rem;     
+        text-align: center;  
+        border: var(--main-border);
+        box-shadow: 7px 7px 0 0 var(--main-color);
+        color: var(--main-color);  
+        width: 400px;
+        margin:1rem auto; 
+        display: block;       
+
+        @media (max-width: 832px) {
+            width: 150px;
+            box-shadow: 3px 3px 0 0 var(--main-color);           
+        }
+
+        a {
+            font-size: calc(1rem + 0.5vw);                          
+            font-weight: 400;
+            font-family: 'Anton', sans-serif;  
+            
+            @media (max-width: 832px) {
+                font-size: 1rem !important;           
+            }
+
+        }
+    }
+
+    #herramientas {
+        margin: 2rem 2rem 0;
+        border-top: 2px solid var(--main-color);
+        padding-top: 5rem;
+
+        h3 {           
+            font-size: calc(1rem + 2vw);
+            font-weight: 400;
+
+            @media (max-width: 768px) {
+                font-size: calc(1.5rem + 2vw);
+            }
+        }
+
+        h4 {
+            font-family: 'Titillium Web', sans-serif; 
+            font-size: calc(1rem + 0.8vw);
+            font-weight: 400;  
+        }
+
+        .hGroupContainer {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); 
+            margin-top: 2rem;        
+            gap: 0.5rem; 
+            
+            @media (max-width: 768px) {
+                grid-template-columns: repeat(1, 1fr); 
+            }
+        }
+
+        .hContainer2 {
+            background-color: #ddb2c0;
+        }
+        
+        .hContainer {
+            grid-column: span 1;            
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem; 
+            background-color: #ddb2c0;   
+            border-radius: 1rem;
+
+            @media (max-width: 576px) {
+                flex-direction: column;
+            }                  
+            
+
+            .imgContainer {
+                width: 30%;
+                
+                @media (max-width: 576px) {
+                    width: 100%;
+                }
+
+                img {
+                    height: 200px;
+                    max-width: 75%;
+                }
+
+                @media (max-width: 576px) {
+                    display: none;                    
+                }
+            }
+            
+            .imgMobile {
+                display: none;
+                
+                @media (max-width: 576px) {
+                    display: block !important;                    
+
+                    img {
+                        height: 100px;    
+                        max-width: 200px;                    
+                    }
+                }
+            }
+            
+            .infoContainer {                
+                width: 70%;
+
+                @media (max-width: 576px) {
+                    width: 100%;
+                }
+
+                p span {
+                    font-size: calc(1rem + 0.5vw);
+                    font-weight: 800;
+                }
+
+                .tLeft {
+                    text-align: left;
+
+                    @media (max-width: 576px) {
+                        text-align: center;
+                    }
+                }
+                
+                .tRight {
+                    text-align: right;
+                    @media (max-width: 576px) {
+                        text-align: center;
+                    }
+                    
+                }
+            }
+        }
+    }
+
+    #action, #hans, #crear, #iluminar, #magico, #tinta, #recuperar {
+        margin: 2rem 2rem 0;
+        border-top: 2px solid var(--main-color);
+        padding-top: 5rem;
+
+        @media (max-width: 768px) {
+            margin: 2rem 1rem 0;
+        }
+
+        h3 {           
+            font-size: calc(1rem + 2vw);
+            font-weight: 400;
+
+            @media (max-width: 768px) {
+                font-size: calc(1.5rem + 2vw);
+            }
+        }
+
+        h4 {
+            font-family: 'Titillium Web', sans-serif; 
+            font-size: calc(1rem + 0.8vw);
+            font-weight: 600;  
+        }
+
+        p {
+            max-width: 800px; 
+            margin: auto;
+
+            span {
+                font-size: calc(1rem + 0.5vw);
+                font-weight: 800;  
+            }
+        }
+
+        .cursoIll {
+            max-width: 400px;
+            margin-top: 1rem;
+            padding: 1rem;
+        }
+
+        .cursoImg {
+            max-width: 800px;
+            margin-top: 1rem;
+            padding: 1rem;
+            border: var(--main-border);
+            box-shadow: 10px 10px 0 0 var(--main-color);
+
+            @media (max-width: 832px) {
+                width: 90%;
+                margin: 0.5rem auto;
+                box-shadow: 3px 3px 0 0 var(--main-color);   
+            }
+
+            @media (max-width: 768px) {
+                padding: 0.5rem;   
+            }
+        }
+
+        .curseGroup {
+            display: flex;
+            flex-direction: row;
+            max-width: 800px;
+            margin: 2rem auto 0;
+
+            p {
+                text-align: left;
+            }
+
+            img {
+                width: 30%;
+                max-height: 200px;
+                padding: 1rem;
+            }
+
+            .imgLarge {
+                max-height: 1200px ;
+            }
+        }
+        
+
+        .example {
+            display: flex;
+            flex-direction: column;
+            background-color: #ddb2c0;
+            width: 500px;
+            margin: 0 auto 2rem;
+            border-radius: 1rem;
+            padding: 1rem;
+
+            @media (max-width: 632px) {
+                width: 100%;
+                padding: 0 1rem;
+            }
+
+            img {
+                width: 100%;                
+            }
+
+            p {
+                max-width: 400px;
+                margin: 1rem auto 0;
+            }
+        }
+
+        .consejos {
+            max-width: 660px;
+            margin: 1rem auto 0;
+
+            p {
+                
+                margin-left: calc(1rem + 0.5vw);
+                position: relative;
+                display: inline-block;
+                width: 100%;
+                text-align: left;
+                line-height: 3.5rem;
+
+                &::before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    left: -2rem;
+                    top: 0rem;
+                    width: calc(1rem + 0.5vw);
+                    height: calc(1rem + 0.5vw);
+                    background: url('../../../public/Images/curso/ok.svg');
+                    background-repeat: no-repeat;
+                    margin-top: 1rem;
+
+                }
+
+                @media (max-width: 576px) {
+
+                    line-height: 2rem;
+
+                    &::before{
+                        display: inline;
+                        top: -0.5rem;
+                        left: -1.2rem;                        
+                    }
+                }
+            }
+
+            img {
+                margin-top: 1rem;
+                width: 100%;
+            }
+        }
+
+        .paleta {
+            max-width: 600px;
+            
+            @media (max-width: 632px) {
+                margin: 1rem auto;
+                width: 100%;
+            }
+        }
+
+        .digital {
+            display: flex;
+            flex-direction: row;
+            max-width: 800px;
+            margin: 2rem auto 0;
+
+            @media (max-width: 576px) {
+                flex-direction: column;
+            }
+
+            img {
+                width: 30%;
+                max-height: 200px;
+                text-align: right;
+                align-self: center;
+                justify-self: center;    
+                
+                @media (max-width: 576px) {
+                    width: 100%;
+                }
+            }
+
+            p {
+                width: 70%;
+                text-align: left;
+
+                @media (max-width: 576px) {
+                    width: 100%;
+                    text-align: center;
+                    margin-top: 1rem;
+                }
+            }
+        }
+
+    }
+
+        
+}

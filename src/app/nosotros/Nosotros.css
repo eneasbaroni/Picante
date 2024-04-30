@@ -1,0 +1,124 @@
+@keyframes shimmer_2s_infinite {
+    0% {
+        background-position: 100%;
+    }
+
+    100% {
+        background-position: -100%;
+    }
+}
+
+.nosotrosContainer {
+    grid-column: 1 / span 12;
+    padding: 0 5rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+    @media screen and (max-width: 768px) {
+        padding: 0 0.5rem;
+    }
+
+    h1,
+    h2 {
+        grid-column: 1 / span 12;
+        text-align: center;
+        font-size: calc(3rem + 1vw);
+        border: solid 2px var(--main-color);
+        background-color: var(--main-color);
+        color: var(--main-bg);
+        width: auto;
+        padding: 0 2rem;
+        margin: 0 auto;
+
+        @media screen and (max-width: 768px) {
+            font-size: calc(2.5rem + 1vw);
+        }
+
+        @media screen and (max-width: 576px) {
+            font-size: calc(2rem + 1vw);
+        }
+    }
+
+    h1 {
+        margin-top: 3rem;
+        transform: rotate(4deg) translate(-1rem, 0);
+    }
+
+    h2 {
+        margin-bottom: 1rem;
+        transform: rotate(2deg) translate(1rem, 0);
+    }
+
+    .equipoInfo {
+        grid-column: 1 / span 6;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        @media screen and (max-width: 1500px) {
+            grid-column: 1 / span 12;
+            grid-row: 4 / span 1;
+            text-align: justify;
+        }
+
+        h3 {
+            font-size: calc(3rem + 1vw);
+
+            @media screen and (max-width: 768px) {
+                margin-top: 1rem;
+                font-size: calc(8vw);
+                text-align: justify;
+            }
+        }
+    }
+
+    .equipoImg {
+        grid-column: 7 / span 6;
+        height: 40vw;
+        position: relative;
+        border: solid 3px #885d75;
+        /* margin: 5rem 2rem; */
+        background: #5d8188;
+        background: #885d75;
+        transition: all 0.5s ease-in-out;
+        box-shadow: 7px 7px 0 0 #885d75;
+
+        @media screen and (max-width: 1500px) {
+            grid-column: 1 / span 12;
+            grid-row: 3 / span 1;
+            height: 40vw;
+        }
+
+        @media screen and (max-width: 768px) {
+            grid-column: 1 / span 12;
+            grid-row: 3 / span 1;
+            height: 60vw;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            mix-blend-mode: soft-light;
+            -webkit-filter: grayscale(100%) contrast(200%);
+            filter: grayscale(100%) contrast(200%);
+            opacity: 0.5;
+            transition: all 0.5s ease-in-out;
+
+            animation: shimmer_2s_infinite 4s linear infinite;
+            background: linear-gradient(to right,
+                    transparent,
+                    rgba(255, 255, 255, 1) 50%,
+                    transparent);
+            background-size: 200% auto;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .nosotrosContainer h1,
+    .nosotrosContainer h2 {
+        font-size: calc(2rem + 1vw);
+    }
+}

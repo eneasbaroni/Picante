@@ -16,13 +16,13 @@ import Header from "./_components/Header/Header";
 import Footer from "./_components/Footer/Footer";
 import {Providers} from "./Providers";
 
-export const titilium = Titillium_Web({
+const titilium_web = Titillium_Web({
   subsets: ["latin"],
   weight: ["200", "300", "400", "600", "700", "900"],
   variable: "--font-titilium",
 });
 
-export const anton = Anton({
+const anton = Anton({
   subsets: ["latin"],
   weight: ["400"],
   variable: "--font-anton",
@@ -43,7 +43,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${anton.variable} ${titilium.variable}`}>
+      <body className={`${anton.variable} ${titilium_web.variable}`}>
         <Providers>
           <Header/>
             {children}

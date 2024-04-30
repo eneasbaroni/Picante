@@ -51,7 +51,7 @@ const Inicio = () => {
                 COMPLETÁ EL FOMRULARIO DE PRESUPUESTO.<br />EVALUAREMOS TU PROYECTO, Y TE ENVIAREMOS LA COTIZACIÓN.<br />GRACIAS POR CONFIAR EN NUESTRO TRABAJO :)
             </p>
 
-            <Link href="/feria-formulario" className="toFormulario">
+            <Link href="/presupuesto" className="toFormulario">
                 <p>IR A FORMULARIO</p> 
                 <div className="arrowsContainer">
                     <img src="/Images/arrow.svg" alt="arrox" />

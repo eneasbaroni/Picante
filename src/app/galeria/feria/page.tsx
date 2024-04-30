@@ -57,7 +57,7 @@ const Feria = () => {
                 COMPLETÁ EL FORMULARIO DE PARTICIPACION PARA QUE NOS PODAMOS PONER EN CONTACTO CON VOS
             </p>
 
-            <Link href="/feria-formulario" className="toFormulario">
+            <Link href="/presupuesto" className="toFormulario">
                 <div className="arrowsContainer">
                     <img src="/Images/arrow.svg" alt="arrox" />
                     <img src="/Images/arrow.svg" alt="arrox" />

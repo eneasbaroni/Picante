@@ -70,7 +70,7 @@
             width: 800px;
             margin: 0.5rem auto;
             font-weight: 400;
-            font-family: 'Anton', sans-serif;
+            font-family: var(--font-anton);
 
             @media (max-width: 832px) {
                 width: 90%;
@@ -102,7 +102,7 @@
         a {
             font-size: calc(1rem + 0.5vw);                          
             font-weight: 400;
-            font-family: 'Anton', sans-serif;  
+            font-family: var(--font-anton);  
             
             @media (max-width: 832px) {
                 font-size: 1rem !important;           
@@ -126,7 +126,7 @@
         }
 
         h4 {
-            font-family: 'Titillium Web', sans-serif; 
+            font-family: var(--font-titilium);
             font-size: calc(1rem + 0.8vw);
             font-weight: 400;  
         }
@@ -241,7 +241,7 @@
         }
 
         h4 {
-            font-family: 'Titillium Web', sans-serif; 
+            font-family: var(--font-titilium);
             font-size: calc(1rem + 0.8vw);
             font-weight: 600;  
         }

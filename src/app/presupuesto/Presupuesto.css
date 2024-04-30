@@ -145,7 +145,7 @@
   .enviarBtn, .enviarBtnDesabilitado{
     border-bottom: solid 3px var(--main-color) !important;
     font-size: 2rem;
-    font-family: 'Titillium Web', sans-serif; 
+    font-family: var(--font-titilium);
   }
   
   .enviarBtn {
@@ -301,14 +301,14 @@
     font-size: 0.9rem ;
     color: var(--main-color);
     font-weight: 200 ;
-    font-family: 'Titillium Web', sans-serif;  
+    font-family: var(--font-titilium);  
   }
   
   .swal2-styled.swal2-confirm {
     background-color: var(--second-bg);    
     border-radius: 0;
     font-weight: 200 ;
-    font-family: 'Anton', sans-serif;   
+    font-family: var(--font-anton);  
   }
   
   .swal2-container.swal2-backdrop-show, .swal2-container.swal2-noanimation {

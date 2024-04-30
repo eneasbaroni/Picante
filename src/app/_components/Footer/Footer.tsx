@@ -9,7 +9,8 @@ const Footer = () => {
 
                 <div className='ubication'>
                     <a href="https://g.page/picante-serigrafia?share" target="_blank" rel="noreferrer" >
-                        <Image src='/Images/contact/mapa.png' height={600} width={1000} alt='mapa' />
+                        <img src="/Images/contact/mapa.png" alt="mapa" />
+                        {/* <Image src='/Images/contact/mapa.png' height={600} width={1000} alt='mapa' /> */}
                     </a>
                 </div>
 

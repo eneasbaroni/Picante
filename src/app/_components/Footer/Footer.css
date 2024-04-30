@@ -18,10 +18,6 @@ footer {
     /* grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(2, calc(50vh - 2.5vw)); */
     background-color: var(--main-bg);
-
-    @media screen and (max-width: 768px) {
-        grid-template-rows: 2fr 1fr;
-    }
 }
 
 .footerImgContainer {

@@ -135,7 +135,7 @@ footer {
             }
 
             .linksContainer {
-                display: flex;
+                display: flex !important;
                 flex-direction: column;
 
                 a {
@@ -147,7 +147,7 @@ footer {
 
         .infoIcons {
             grid-column: 8 / span 5;
-            display: flex;
+            display: flex !important;
             flex-direction: row;
             justify-content: space-around;
             align-items: center;

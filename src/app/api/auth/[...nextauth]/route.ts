@@ -32,6 +32,8 @@ const handler = NextAuth({
               if (res.ok) {
                 return user 
               } else {
+                console.log('error con el usuario', user);
+                
                 return user
               }
                          

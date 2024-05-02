@@ -23,6 +23,11 @@ footer {
     display: flex;
     position: relative;
     overflow: hidden;
+
+    @media screen and (max-width: 576px) {
+        height: auto;
+        aspect-ratio: 3 / 2 !important;
+    }
 }
 
 .footerImgContainer .image {

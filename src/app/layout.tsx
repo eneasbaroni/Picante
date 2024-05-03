@@ -30,10 +30,11 @@ const anton = Anton({
 
 export const metadata: Metadata = {
   title: "Picante Serigrafía",
-  description: "Picante es un emprendimiento de serigrafía de Córdoba que ademas tambien funciona como marca de indumentaria con diseños personalizados, únicos, singulares y puros. Nos caracterizamos por la calidad y la creatividad",
+  description: "Picante es un taller de serigrafía de Córdoba que ademas tambien funciona como marca de indumentaria con diseños personalizados, únicos, singulares y puros. Nos caracterizamos por la calidad y la creatividad",
   icons: {
     icon: "/favicon.ico",
   },
+  keywords: ["serigrafia, cordoba, picante, estampado, indumentaria, emprendimiento, tela, textil, arte, galeria, calidad, creatividad, córdoba, argentina, serigrafía"],
 };
 
 export default function RootLayout({

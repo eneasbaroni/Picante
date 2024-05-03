@@ -1,6 +1,7 @@
 'use client'
 import { useEffect } from "react"
 import { useSession, signIn, signOut, getSession } from "next-auth/react"
+import Link from "next/link"
 
 const Profile = () => {  
     
@@ -20,11 +21,19 @@ const Profile = () => {
               <>
                 <h1>BIENVENIDO</h1>
                 <h2>{session.user?.name}</h2>                              
-                <img src={session.user!.image!} alt="profile img" />
-                {/* @ts-ignore */}                
-                <p>role: {session.user!.role!}</p>
+                <img src={session.user!.image!} alt="profile img" />                
                 {/* @ts-ignore */}
-                {session.user!.role && session.user!.role === 'admin' && <p>Hola Administrador</p>}
+                {session.user!.role && (session.user!.role === 'admin' || session.user!.role === 'premium') ? 
+                <Link href="/curso"><button>Acceso al Curso</button></Link>:
+                <>
+                  <h3>Ya esta disponible el nuevo curso de serigrafía</h3>
+                  <p>Para acceder al mismo u obtener mas informacion y poder disfrutar de contenido exclusivo ponte en contaco</p>
+                  <Link href="https://wa.me/+5493516558094/?text=Buenos%20d%C3%ADas%2C%20quiero%20obtener%20mas%20informaci%C3%B3n%20sobre%20el%20curso%20de%20serigraf%C3%ADa" target="_blank"><button>CONTACTO</button></Link>
+                  
+      
+                </>
+                
+                }  
                 <button onClick={() => signOut()}>Cerrar sesión</button>
               </>:
               <>

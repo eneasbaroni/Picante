@@ -11,6 +11,7 @@ const NavBar = ({opacity, foo}: {opacity: number, foo: () => void}) => {
         <Link href="/presupuesto"><button onClick={foo}>PRESUPUESTO</button></Link>
         <Link href="/nosotros"><button  onClick={foo}>NOSOTROS</button></Link>
         <Link href="/#contacto"><button  onClick={foo}>CONTACTO</button></Link>
+        <Link href="/profile"><button  onClick={foo}>PERFIL</button></Link>
         {/* <Link href="/cursos"><button  onClick={foo}>EXPERIENCIA PICANTE</button></Link> */}
 
       </nav>

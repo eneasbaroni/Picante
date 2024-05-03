@@ -5,7 +5,7 @@ import Galerias from "./_components/Galerias/Galerias"
 import { useEffect, useState } from "react"
 
 
-const Inicio = () => { 
+const Inicio = () => {
 
     return (
         <div className="inicioContainer">
@@ -19,11 +19,11 @@ const Inicio = () => {
 
             <div className="homeContainer">
                 <div className="homeImgC">
-                    <Image src='/Images/home/picante.svg' height={600} width={1500} alt="Home Banner"/>
+                    <Image src='/Images/home/picante.svg' height={600} width={1500} alt="Home Banner" />
                 </div>
 
                 <button className="clickme">
-                    <a href="#homeInfo">CLICK<br />ME</a>                     
+                    <a href="#homeInfo">CLICK<br />ME</a>
                 </button>
             </div>
 
@@ -31,13 +31,14 @@ const Inicio = () => {
             <div className="homeInfo" id="homeInfo">
                 <div className="homeInfoText">
                     <h2>QUE ES PICANTE?</h2>
-                    <p>Picante, es un taller de serigrafía independiente/autogestivo fundado en 2016.<br />
-                        Trabajamos con emprendedores, artistas y comerciantes de diferentes rubros; con nuestro oficio ayudamos a muchos a cumplir sus sueños, creando productos y obras únicas e irrepetibles.<br />
-                        Te invitamos a conocer más sobre esta técnica de impresión manual, visitá nuestra galería y nuestra fanpage ♥.
+                    <p>
+                        Bienvenidos a tu destino para explorar el fascinante mundo de la serigrafía, taller fundado en 2016.<br/>
+                        En nuestro taller, nos enorgullecemos de ofrecer una experiencia única donde la creatividad se fusiona con la técnica para dar vida a diseños vibrantes y originales.<br/>
+                        Espacio dedicado a inspirar y capacitar a artistas, emprendedores y entusiastas de la serigrafía.
                     </p>
                 </div>
 
-                <div className="imgA"><Image src='/Images/home/home01.jpg'  height={400} width={600} alt="Home Banner"></Image></div>
+                <div className="imgA"><Image src='/Images/home/home01.jpg' height={400} width={600} alt="Home Banner"></Image></div>
                 <div className="imgB"><Image src='/Images/home/home02.jpg' height={400} width={600} alt="Home Banner"></Image></div>
                 <div className="imgA imgC"><Image src='/Images/home/home03.jpg' height={400} width={600} alt="Home Banner"></Image></div>
                 <div className="imgA imgMiddleA"><Image src='/Images/home/home05.jpg' height={400} width={600} alt="Home Banner"></Image></div>
@@ -52,11 +53,11 @@ const Inicio = () => {
             </p>
 
             <Link href="/presupuesto" className="toFormulario">
-                <p>IR A FORMULARIO</p> 
+                <p>IR A FORMULARIO</p>
                 <div className="arrowsContainer">
                     <img src="/Images/arrow.svg" alt="arrox" />
                     <img src="/Images/arrow.svg" alt="arrox" />
-                    <img src="/Images/arrow.svg" alt="arrox" />                    
+                    <img src="/Images/arrow.svg" alt="arrox" />
                 </div>
             </Link>
 

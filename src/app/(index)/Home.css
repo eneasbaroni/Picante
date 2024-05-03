@@ -152,7 +152,7 @@
         .homeInfoText {
             grid-column: 2 / span 10;
             margin: 2rem auto;
-            padding: 0.5rem 1rem;
+            padding: 0.5rem 1rem 1rem;
             font-size: 1.5rem;
             color: var(--main-bg);
             background-color: var(--main-bg);

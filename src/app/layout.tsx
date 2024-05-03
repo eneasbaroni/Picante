@@ -29,12 +29,12 @@ const anton = Anton({
 });
 
 export const metadata: Metadata = {
-  title: "Picante Serigrafía",
-  description: "Picante es un taller de serigrafía de Córdoba que ademas tambien funciona como marca de indumentaria con diseños personalizados, únicos, singulares y puros. Nos caracterizamos por la calidad y la creatividad",
+  title: "Picante Serigrafía. Taller de serigrafía en Córdoba",
+  description: "Descubre la magia de la serigrafía en Picante, un taller creativo en Córdoba. Ofrecemos servicios de producción, estampado y cursos para todos los niveles. Aprende a crear tus propios diseños y estamparlos en camisetas, bolsos, posters y más. ¡Visítanos y da vida a tus ideas!",
   icons: {
     icon: "/favicon.ico",
   },
-  keywords: ["serigrafia, cordoba, picante, estampado, indumentaria, emprendimiento, tela, textil, arte, galeria, calidad, creatividad, córdoba, argentina, serigrafía"],
+  keywords: ["serigrafía, taller de serigrafía, Córdoba, taller creativo, estampado, personalizado, cursos de serigrafía, diseño de serigrafía, impresión en serigrafía, camisetas estampadas, bolsos estampados, posters personalizados, producción de serigrafía, eventos con serigrafía, regalos personalizados, arte, decoración con serigrafía, arte urbano, expresión artística, creatividad, Córdoba Argentina"],
 };
 
 export default function RootLayout({

@@ -229,7 +229,7 @@ const Curso = () => {
                     <div id="hans">
                         <h3>MANOS A LA OBRA</h3>
                         <h4>Ahora si te quiero ver</h4>
-                        <p>Ahora, te toca ponerte creativ@, te invito a <span>CREAR UN DISEÑO</span> (Digital o Analógico). El día que asistas al taller, deberás traer tu diseño impreso o dibujado (Tendré diseños disponibles el día del taller, por si aún no tenés el tuyo).</p>
+                        <p>Ahora, te toca ponerte creativ@, te invito a <span>CREAR UN DISEÑO</span> (Digital o Analógico). El día que asistas al taller, deberás traer tu diseño impreso o dibujado sobre PAPEL VEGETAL (Tendré diseños disponibles el día del taller, por si aún no tenés el tuyo).</p>
                         <h4>ATENCIÓN</h4>
                         <p>
                             *El tamaño NO debe superar 10*10 cm.<br />

@@ -59,8 +59,13 @@ const Form = () => {
                 })
             }
         } catch (error) {
-
-
+            console.log('error al enviar', error);            
+            setLoading(false)
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Error al enviar el formulario',
+            })
         }
     }
 

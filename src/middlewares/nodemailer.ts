@@ -10,7 +10,9 @@ const transporter = createTransport({
     auth: {
         user: EMAIL,
         pass: MAIL_PASS,
-    }
+    },
+    // === add this === //
+    tls : { rejectUnauthorized: false }
 });
 
 /* funcion para enviar el mail */

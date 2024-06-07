@@ -1,14 +1,15 @@
-:root {
-    --main-color: #3f52a0;
-    --main-color: #162a7c;
-    --second-color: #04839d;
+:root {    
+    --main-color: #121212;
+    --second-color: #a11619;
     --third-color: #b33f4c;
     --main-bg: #ddb2c0;
     --main-bg: #fad3e0;
     --second-bg: #fbd4ca;
     --main-border: 3px solid var(--main-color);
     --second-border: 3px solid var(--second-color);
-    --main-filter: invert(10%) sepia(56%) saturate(4578%) hue-rotate(226deg) brightness(97%) contrast(94%);   
+    --main-filter: invert(0%) sepia(7%) saturate(328%) hue-rotate(339deg) brightness(90%) contrast(86%);  
+    
+    --img-border:#5c4647;
 }
 
 

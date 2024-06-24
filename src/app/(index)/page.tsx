@@ -30,7 +30,7 @@ const Inicio = () => {
 
             <div className="homeInfo" id="homeInfo">
                 <div className="homeInfoText">
-                    <h2>QUE ES PICANTE?</h2>
+                    <h2>HOLA :)</h2>
                     <p>
                         Bienvenidos a tu destino para explorar el fascinante mundo de la serigrafía, taller fundado en 2016.<br/>
                         En nuestro taller, nos enorgullecemos de ofrecer una experiencia única donde la creatividad se fusiona con la técnica para dar vida a diseños vibrantes y originales.<br/>

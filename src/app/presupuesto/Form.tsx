@@ -86,7 +86,7 @@ const Form = () => {
                     <option>Carton</option>
                     <option>Chapa</option>
                     <option>Plastico</option>
-                    <option>Otros</option>
+                    <option>DTF (Direct transfer to film)</option>
                 </select>
                 <Input placeholder="MEDIDA DEL TRABAJO EN cm" name="medida" label="Medida del Trabajo" type='text' />
                 <Input placeholder="CANTIDAD DE COLORES (máximo 5)" name="cantidadColores" label="Cantidad de Colores" type='text' />

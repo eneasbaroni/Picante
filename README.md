@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# PICANTE SERIGRAFIA
 
-## Getting Started
+Institutional web app for a screen printing company. Which also offers courses and events.
+Both the Frontend and the Backend were developed with NextJS.
 
-First, run the development server:
+## Getting started 🚀
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Fork and clone the repository
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install NPM packages
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+   ```
+   npm install
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+3. Create an .env file with the necessary environment variables. Take a look at the env.example file
 
-## Learn More
+4. Deploy the project 
 
-To learn more about Next.js, take a look at the following resources:
+   ```
+   npm run dev
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+    The project will be available at http://localhost:3000
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Built with 🛠️ 
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+* NextJS for Frontend and Backend
+* Mercado Pago for the payment gateway
+* Nodemailer for email management 
+* Mongo DB for Data Base
+* Next-Auth for session management 
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Author
+
+Eneas Baroni
+
+
+### License
+
+Copyright © 2024 Eneas Baroni
+All rights reserved.

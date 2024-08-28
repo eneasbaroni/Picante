@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.ico",
   },
-  keywords: ["serigrafía, taller de serigrafía, Córdoba, taller creativo, estampado, personalizado, cursos de serigrafía, diseño de serigrafía, impresión en serigrafía, camisetas estampadas, bolsos estampados, posters personalizados, producción de serigrafía, eventos con serigrafía, regalos personalizados, arte, decoración con serigrafía, arte urbano, expresión artística, creatividad, Córdoba Argentina"],
+  keywords: ["serigrafía, taller de serigrafía, serigrafia cordoba, Córdoba, taller creativo, estampado, personalizado, cursos de serigrafía, diseño de serigrafía, impresión en serigrafía, camisetas estampadas, bolsos estampados, posters personalizados, producción de serigrafía, eventos con serigrafía, regalos personalizados, arte, decoración con serigrafía, arte urbano, expresión artística, creatividad, Córdoba Argentina"],
   authors: [{ name: "Eneas Baroni", url: "https://www.eneasbaroni.com.ar/" }],
 };
 

@@ -12,32 +12,32 @@
         width: 80vw;
     }
 
-    h1, h2, h3 {
+    & h1, h2, h3 {
         text-align: center;
     }
 
-    h2 {
+    & h2 {
         line-height: calc(1rem + 3vw);
     }
 
-    h3 {
+    & h3 {
         font-size: calc(1rem + 1vw);
     }
 
-    img {
+    & img {
         border-radius: 50%;
         width: 100px;
         height: 100px;
         margin-bottom: 1rem;
     }
     
-    p {
+    & p {
         margin: 1.5rem 0;
         text-align: center;
         padding: 0 1rem;
     }
 
-    button {
+    & button {
         background-color: var(--main-color);
         border: none;
         padding: 0.5rem 1rem;
@@ -51,13 +51,13 @@
         }
     }
 
-    .googleBtn {
+    & .googleBtn {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
 
-        img {
+        & img {
             width: 1rem;                    
             height: auto;
             margin: auto 0 auto 1rem;

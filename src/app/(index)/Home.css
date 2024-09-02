@@ -51,14 +51,14 @@
         padding: 0;
     }
 
-    .homeContainer {
+    & .homeContainer {
         grid-column: 1 / span 12;
         height: calc(100vh - 84px);
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 2fr;
 
-        .homeImgC {
+        & .homeImgC {
             position: relative;
             grid-column: 1 / span 1;
             /* height: 20rem; */
@@ -71,7 +71,7 @@
             animation-delay: 1s;
             filter: var(--main-filter);
 
-            img {
+            & img {
                 width: 100% !important;
                 height: 100% !important;
                 object-fit: contain !important;
@@ -84,7 +84,7 @@
             }
         }
 
-        .clickme {
+        & .clickme {
             grid-column: 1 / span 1;
             width: 7vw;
             height: 7vw;
@@ -106,7 +106,7 @@
                 height: 20vw;
             }
 
-            a {
+            & a {
                 font-size: 1.5vw;
                 color: var(--main-bg);
 
@@ -121,7 +121,7 @@
         }
     }
     
-    .homeInfo {
+    & .homeInfo {
         grid-column: 1 / span 12;
         text-align: center;
         margin-top: 5rem;
@@ -149,7 +149,7 @@
             /* opacity: 0.5; */
         }
     
-        .homeInfoText {
+        & .homeInfoText {
             grid-column: 2 / span 10;
             margin: 2rem auto;
             padding: 0.5rem 1rem 1rem;
@@ -160,14 +160,14 @@
             border-radius: 10px;
             z-index: 20;
 
-            h2 {
+            & h2 {
                 @media screen and (max-width: 768px) {
                     font-size: calc(8vw);
                 }
             }
         }
         
-        .imgA,
+        & .imgA,
         .imgB {
             grid-column: auto / span 4;
             position: relative;
@@ -187,7 +187,7 @@
                 transform: rotate(0) scale(1.1) !important;
                 z-index: 70;
 
-                img {
+                & img {
                     -webkit-filter: none;
                     filter: none;
                     opacity: 1;
@@ -202,7 +202,7 @@
                 box-shadow: 3px 3px 0 0 #885d75;
             }
         
-            img {
+            & img {
                 height: auto;
                 mix-blend-mode: soft-light;
                 -webkit-filter: grayscale(100%) contrast(200%);
@@ -223,7 +223,7 @@
             
 
         
-        .imgA {
+        & .imgA {
             transform: rotate(-5deg);
 
             @media screen and (max-width: 576px) {
@@ -233,7 +233,7 @@
             }
         }
         
-        .imgB {
+        & .imgB {
             transform: rotate(5deg);
 
             @media screen and (max-width: 576px) {
@@ -244,13 +244,13 @@
         }
 
         @media screen and (max-width: 576px) {
-            .imgC {
+            & .imgC {
                 grid-column: 4 / span 6;
                 margin-top: -2rem;
             }
         }
         
-        .imgMiddleA {
+        & .imgMiddleA {
             grid-column: 3 / span 4;
             transform: rotate(1deg) !important;
             margin: -4vw 1rem 5rem 0;
@@ -266,7 +266,7 @@
             }
         }
         
-        .imgMiddleB {
+        & .imgMiddleB {
             grid-column: 7 / span 4;
             transform: rotate(-5deg) !important;
             margin: -5vw 1rem 5rem 0;
@@ -284,7 +284,7 @@
         
     }
 
-    .inicioPresupuesto {
+    & .inicioPresupuesto {
         grid-column: 1 / span 12;
         text-align: center;
         margin-top: 5rem;
@@ -301,7 +301,7 @@
             font-size: calc(1.2rem + 1vw);
         }
     
-        span {
+        & span {
             -webkit-text-stroke: 2px var(--main-color);
             -webkit-text-fill-color: var(--main-bg);
             font-family: var(--font-anton);
@@ -373,7 +373,7 @@
             }
         }
     } */
-    .toFormulario {
+    & .toFormulario {
         grid-column: auto / span 12;
         display: flex !important;
         flex-direction: row;
@@ -389,18 +389,18 @@
             width: 17rem;
         }
         
-        p {
+        & p {
             font-family: var(--font-anton);
             font-size: calc(1rem + 1vw);            
         }
     
-        .arrowsContainer {
+        & .arrowsContainer {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
             
-            img {
+            & img {
                 height: calc(1rem + 1vw);
                 width: auto;
                 filter: var(--main-filter);

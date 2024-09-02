@@ -7,7 +7,7 @@
     background-color: rgba(0, 0, 0, 0.658);
     z-index: 99;
 
-    nav {
+    & nav {
         width: 60vw;
         height: 100vh;
         display: flex;
@@ -22,7 +22,7 @@
             width: calc(100vw - 45px);
         }
 
-        button {
+        & button {
             /* grid-column: auto / span 10; */
             width: calc(100% - 2rem);
             margin: 1rem;
@@ -36,7 +36,7 @@
                 transform: translate(7px, 7px);
             }
 
-            a {
+            & a {
                 font-size: calc(1rem + 1vw);
                 color: var(--second-color);
 

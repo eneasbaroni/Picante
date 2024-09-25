@@ -1,3 +1,27 @@
+@keyframes animA {
+  0% {
+    transform: scale(1) rotate(0);
+  }
+  50% {
+    transform: scale(1.2) rotate(5deg);
+  }
+  100% {
+    transform: scale(1) rotate(0);
+  }
+}
+
+@keyframes animB {
+  0% {
+    transform: scale(1) rotate(0);
+  }
+  50% {
+    transform: scale(1.2) rotate(-5deg);
+  }
+  100% {
+    transform: scale(1) rotate(0);
+  }
+}
+
 .formularioContainer {
     padding: 0 0.5rem;
     display: grid;
@@ -52,9 +76,17 @@
     transition: all 0.5s ease-in-out;
   }
   
+  .formImgContainer .btn-01  {    
+    animation: animB 2s infinite;
+  }
+
+  .formImgContainer .btn-02  {    
+    animation: animA 2s infinite;
+  }
+
   .formImgContainer .btn-01:hover, .formImgContainer .btn-02:hover  {
     -webkit-filter: drop-shadow(5px 5px 5px var(--main-color));
-    filter: drop-shadow(5px 5px 5px var(--main-color)); 
+    filter: drop-shadow(5px 5px 5px var(--main-color));     
   }
   
   .formularioContainer .formularioP p {

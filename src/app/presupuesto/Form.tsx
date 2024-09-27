@@ -89,7 +89,7 @@ const Form = () => {
                     <option>DTF (Direct transfer to film)</option>
                 </select>
                 <Input placeholder="MEDIDA DEL TRABAJO EN cm" name="medida" label="Medida del Trabajo" type='text' />
-                <Input placeholder="CANTIDAD DE COLORES (máximo 5)" name="cantidadColores" label="Cantidad de Colores" type='text' />
+                <Input placeholder="CANTIDAD DE COLORES EN ESTAMPA (máximo 5)" name="cantidadColores" label="Cantidad de Colores" type='text' />
                 <Input placeholder="CANTIDAD DE COPIAS A REALIZAR" name="cantidad" label="Cantidad de Copias" type='text' />
                 <Input placeholder="DESCRIPCION DEL TRABAJO A REALIZAR" name="descripcion" label="Breve Descripción" type='text' />
 

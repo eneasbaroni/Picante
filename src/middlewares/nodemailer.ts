@@ -22,7 +22,7 @@ const sendMail = async (data: any, file:any) => { //cambiar el any
         from: data.email,
         to: `${EMAIL_TO_SEND}`,
         subject: 'Nuevo pedido de presupuesto',
-        text: `Hola, mi nombre es ${data.nombre} ${data.apellido}.\r\nMi teléfono es ${data.telefono}.\r\nMi correo electrónico es ${data.email}.\r\nNecesito un presupuesto por:\r\n El soporte seleccionado es ${data.soporte}.\r\nCantidad de copias =  ${data.cantidad}.\r\nMedida = ${data.medida}.\r\nCantidad de colores = ${data.cantidadColores}.\r\nDescripcio = ${data.descripcion}`,
+        text: `Hola, mi nombre es ${data.nombre} ${data.apellido}.\r\nMi teléfono es ${data.telefono}.\r\nMi correo electrónico es ${data.email}.\r\nNecesito un presupuesto por:\r\n El soporte seleccionado es ${data.soporte}.\r\nCantidad de copias =  ${data.cantidad}.\r\nMedida = ${data.medida}.\r\nCantidad de colores de estampa = ${data.cantidadColores}.\r\nDescripcio = ${data.descripcion}`,
         attachments: [{
             filename: data.file.name,
             content: file

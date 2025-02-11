@@ -178,7 +178,7 @@ const Curso = () => {
 
                     </div>
 
-                    <div id="action">
+                    <div id="action" className="flex flex-col items-center">
                         <h3>PASAR A LA ACCIÓN</h3>
                         <h4>Comienza la diversión</h4>
                         <p>Ahora, ya conoces algunos de los materiales básicos para poder comenzar a trabajar, pero falta algo MUY IMPORTANTE: <br /><span>EL DISEÑO</span></p>
@@ -226,7 +226,7 @@ const Curso = () => {
                         <button className="indiceBtn"><a href="#indice" >Volver al índice</a></button>
                     </div>
 
-                    <div id="hans">
+                    <div id="hans" className="flex flex-col items-center">
                         <h3>MANOS A LA OBRA</h3>
                         <h4>Ahora si te quiero ver</h4>
                         <p>Ahora, te toca ponerte creativ@, te invito a <span>CREAR UN DISEÑO</span> (Digital o Analógico). El día que asistas al taller, deberás traer tu diseño impreso o dibujado sobre PAPEL VEGETAL (Tendré diseños disponibles el día del taller, por si aún no tenés el tuyo).</p>
@@ -249,7 +249,7 @@ const Curso = () => {
                         <button className="indiceBtn"><a href="#indice" >Volver al índice</a></button>
                     </div>
 
-                    <div id="crear">
+                    <div id="crear" className="flex flex-col items-center">
                         <h3>MOMENTO DE CREAR :)</h3>
                         <h4>A mover las manos</h4>
                         <p>
@@ -288,7 +288,7 @@ const Curso = () => {
                         <button className="indiceBtn"><a href="#indice" >Volver al índice</a></button>
                     </div>
 
-                    <div id="iluminar">
+                    <div id="iluminar" className="flex flex-col items-center">
                         <h3>MOMENTO DE ILUMINAR :)</h3>
                         <h4>El tiempo es oro</h4>
                         <p>
@@ -308,7 +308,7 @@ const Curso = () => {
                         <button className="indiceBtn"><a href="#indice" >Volver al índice</a></button>
                     </div>
 
-                    <div id="magico">
+                    <div id="magico" className="flex flex-col items-center">
                         <h3>MOMENTO MÁGICO :)</h3>
                         <h4>Gracias pacha</h4>
                         <img src="/Images/curso/curso-06.png" alt="imagen del curso" className="cursoImg" />
@@ -332,7 +332,7 @@ const Curso = () => {
                         <button className="indiceBtn"><a href="#indice" >Volver al índice</a></button>
                     </div>
 
-                    <div id="tinta">
+                    <div id="tinta" className="flex flex-col items-center">
                         <h3>MOMENTO TINTA :)</h3>
                         <h4>Posibilidades infinitas</h4>
                         <img src="/Images/curso/curso-09.png" alt="imagen del curso" className="cursoImg" />
@@ -416,7 +416,7 @@ const Curso = () => {
                         <button className="indiceBtn"><a href="#indice" >Volver al índice</a></button>
                     </div>
 
-                    <div id="recuperar">
+                    <div id="recuperar" className="flex flex-col items-center">
                         <h3>RECUPERAR/LAVAR</h3>
                         <h4>Re-utilizar tu shablón</h4>
                         <p>Este proceso te va permitir borrar el diseño que  utilizaste y luego de unos minutos poder tener el shablón limpio para trabajos futuros.</p>

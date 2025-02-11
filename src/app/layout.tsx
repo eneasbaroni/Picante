@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
-import { Titillium_Web, Anton } from "next/font/google";
+import { Titillium_Web, Anton, Inter } from "next/font/google";
 import "./globals.css";
 import './(index)/Home.css'
-import './(index)/_components/Galerias/Galerias.css'
 import './galeria/Galeria.css'
 import './presupuesto/Presupuesto.css'
 import './nosotros/Nosotros.css'
@@ -10,7 +9,6 @@ import './curso/Curso.css'
 import './profile/Profile.css'
 import './_components/Header/Header.css';
 import './_components/Navbar/Navbar.css'
-import './_components/Footer/Footer.css'
 import './_components/Loader/Loader.css'
 import Header from "./_components/Header/Header";
 import Footer from "./_components/Footer/Footer";
@@ -26,6 +24,11 @@ const anton = Anton({
   subsets: ["latin"],
   weight: ["400"],
   variable: "--font-anton",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
 });
 
 export const metadata: Metadata = {
@@ -45,7 +48,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body className={`${anton.variable} ${titilium.variable}`}>
+      <body className={`${anton.variable} ${titilium.variable} ${inter.variable} relative`}>    
         <Providers>
           <Header/>
             {children}

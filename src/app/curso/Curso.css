@@ -222,7 +222,7 @@
         }
     }
 
-    #action, #hans, #crear, #iluminar, #magico, #tinta, #recuperar {
+    #action, #hans, #crear, #iluminar, #magico, #tinta, #recuperar, #DTF {
         margin: 2rem 2rem 0;
         border-top: 2px solid var(--main-color);
         padding-top: 5rem;
@@ -243,12 +243,16 @@
         & h4 {
             font-family: var(--font-titilium);
             font-size: calc(1rem + 0.8vw);
+            max-width: 800px; 
+            margin: auto;
             font-weight: 600;  
+            text-align: left;
         }
 
         & p {
             max-width: 800px; 
             margin: auto;
+            text-align: left;
 
             & span {
                 font-size: calc(1rem + 0.5vw);

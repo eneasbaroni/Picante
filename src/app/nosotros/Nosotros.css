@@ -62,13 +62,18 @@
         }
 
         & h3 {
-            font-size: calc(3rem + 1vw);
+            font-size: calc(2.5rem + 1vw);
 
             @media screen and (max-width: 768px) {
                 margin-top: 1rem;
                 font-size: calc(8vw);
                 text-align: justify;
             }
+        }
+
+        & p {
+            margin-bottom: 2rem;
+            width: 95%;
         }
     }
 

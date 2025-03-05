@@ -70,6 +70,7 @@ const Curso = () => {
                         <a href="#magico">MOMENTO MÁGICO</a>
                         <a href="#tinta">MOMENTO TINTA</a>
                         <a href="#recuperar">RECUPERAR/LAVAR</a>
+                        <a href="#DTF">BONUS TRACK (DTF)</a>
                     </div>
 
                     <div id="herramientas">

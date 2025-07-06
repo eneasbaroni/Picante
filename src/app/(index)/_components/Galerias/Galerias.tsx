@@ -17,7 +17,7 @@ import useScreenSize from "@/hooks/useScreenSize";
 const Links = [
     {
         label: "GALERIA",
-        href: "/galeria/papel",
+        href: "/works",
         text: "Entra para ver nuestos trabajos seleccionados",
         img: "paper.svg",
     },
@@ -35,7 +35,7 @@ const Links = [
     }, */
     {
         label: "FERIA PICANTE",
-        href: "/galeria/feria",
+        href: "/feria",
         text: "Entra para ver imagenes de la última Feria Picante",
         img: "chilli.svg",
     },

@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+/* 
+h3 --> text-4xl tablet:text-2xl mobile:text-xl
+h4 --> text-3xl tablet:text-xl mobile:text-lg
+9 --> text-xl tablet:text-lg mobile:text-sm
+*/
+
 :root {    
     --main-color: #121212;
     --second-color: #a11619;

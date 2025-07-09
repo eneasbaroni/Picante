@@ -60,6 +60,7 @@
             grid-row: 4 / span 1;
             text-align: justify;
         }
+        
 
         & h3 {
             font-size: calc(3rem + 1vw);

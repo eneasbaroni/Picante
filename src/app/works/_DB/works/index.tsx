@@ -52,7 +52,7 @@ const works = [
         surface: "Vinilo autohadesivo.",
         description:
             "En ese trabajo se aplicó Tinta Vinilica (Epoxi), en este caso es necesario agregar un componente especial a la tinta   (Catalizador), para que resista lavados y perdure en el tiempo.",
-        link: "works/06",
+        link: "works/05",
     },
     {
         id: "06",
@@ -63,7 +63,7 @@ const works = [
         surface: "Papel.",
         description:
             "En este trabajo se aplicó Tinta al Agua. Se aplicaron 2 colores, creando una impresión de 2 colores.",
-        link: "works/07",
+        link: "works/06",
     },
     {
         id: "07",
@@ -74,7 +74,7 @@ const works = [
         surface: "Cuerina / Eco cuero.",
         description:
             "En este trabajo se aplicó Tinta Vinilica ya que aporta una mayor durabilidad en el tiempo y es apta para superficies plásticas.",
-        link: "works/08",
+        link: "works/07",
     },
     {
         id: "08",

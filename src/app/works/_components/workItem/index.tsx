@@ -59,17 +59,23 @@ const WorkItem = ({
 }) => {
     return (
         <motion.div
-            className="w-full flex flex-row border-[1px] border-black"
+            className="w-full flex flex-row items-stretch border-[1px] border-black"
             initial={{ y: "5rem" }}
             whileInView={{ y: "0px" }}
             viewport={{ once: true }}
         >
-            <div className="w-2/3 p-4">
-                <Image src={img} alt="Work 1" width={800} height={600} />
+            <div className="w-2/3 p-4 aspect-[3/2]">
+                <Image
+                    src={img}
+                    alt="Work 1"
+                    width={800}
+                    height={600}
+                    className="w-full h-full object-cover"
+                />
             </div>
 
             <motion.div
-                className="flex flex-col w-1/3 justify-between border-l-[1px]  border-black"
+                className="flex flex-col w-1/3 justify-between border-l-[1px] border-black"
                 initial="init"
                 whileHover="hover"
             >
@@ -88,7 +94,7 @@ const WorkItem = ({
                             {title}
                         </motion.h3>
                         <motion.div
-                            className="flex flex-col h-1/3 justify-between"
+                            className="flex flex-col justify-between"
                             variants={linkMotion}
                         >
                             <motion.p

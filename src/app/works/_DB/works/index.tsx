@@ -58,7 +58,7 @@ const works = [
         id: "06",
         img: "/Images/works/06/A.png",
         images: ["A.png", "B.png", "C.png"],
-        title: "Ramon Allende",
+        title: "8",
         tint: "Extender.",
         surface: "Papel.",
         description:

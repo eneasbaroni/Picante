@@ -33,7 +33,7 @@ const Footer = () => {
                 id="contact"
                 className="w-full min-h-screen mobile:min-h-min bg-white flex flex-col items-center border-none outline outline-1 outline-main"
             >
-                <div className="w-full h-[50vh] mobile:h-auto flex mobile:flex-col items-center gap-0 justify-center divide-x divide-main mobile:divide-y mobile:divide-x-0">
+                <div className="w-full h-[50vh] min-h-[350px] mobile:min-h-0 mobile:h-auto flex mobile:flex-col items-center gap-0 justify-center divide-x divide-main mobile:divide-y mobile:divide-x-0">
                     <div className="flex-1 h-full ">
                         <a
                             href="https://g.page/picante-serigrafia?share"

@@ -4,7 +4,7 @@ import works from "../_DB/works";
 import Grill from "@/app/(index)/_components/grill/Grill";
 
 // Server action para obtener un work por id
-export async function getWorkById(id: string) {
+async function getWorkById(id: string) {
     ("use server");
     return works.find((work) => work.id === id) || null;
 }

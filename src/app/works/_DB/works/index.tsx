@@ -82,7 +82,7 @@ const works = [
         images: ["A.png", "B.png", "C.png"],
         title: "Ricaso",
         tint: "Epoxi.",
-        surface: "Vidrio.",
+        surface: "Chapa enlozada.",
         description:
             "En ese trabajo se aplicó Tinta Vinilica (Epoxi), en este caso es necesario agregar un componente especial a la tinta (Catalizador), para que resista lavados y perdure en el tiempo.",
         link: "works/08",

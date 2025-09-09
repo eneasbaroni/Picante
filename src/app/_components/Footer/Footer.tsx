@@ -62,7 +62,7 @@ const Footer = () => {
                             </span>{" "}
                             CON CITA PREVIA EN
                             <br />
-                            AUGUSTO LÓPEZ 1067, CÓRDOBA AR
+                            BUCHARDO 1531, CÓRDOBA AR
                         </p>
 
                         <div className="w-full flex flex-col [&>a]:font-anton [&>a]:text-3xl [&>a]:mobile:text-xl">

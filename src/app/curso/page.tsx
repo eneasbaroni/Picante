@@ -808,11 +808,24 @@ const Curso = () => {
                             utilizaste y luego de unos minutos poder tener el
                             shablón limpio para trabajos futuros.
                         </p>
-                        <img
+                        {/* <img
                             src="/Images/curso/curso-17.png"
                             alt="imagen del curso"
                             className="cursoImg"
-                        />
+                        /> */}
+                        <div className="w-full mobile:w-full m-auto mt-4 rounded-3xl overflow-hidden  border-main p-2 bg-greeny">
+                            <video
+                                autoPlay
+                                loop
+                                muted
+                                className="w-full rounded-2xl overflow-hidden"
+                            >
+                                <source
+                                    src="videos/limpieza.mp4"
+                                    type="video/mp4"
+                                />
+                            </video>
+                        </div>
                         <br />
                         <br />
 

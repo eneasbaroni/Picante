@@ -947,7 +947,7 @@ const Curso = () => {
                     <div id="dtf" className="cursoModule">
                         <h3>DISEÑO DTF PARA INTERVENCIÓN TEXTIL</h3>
                         <h4>Paso a Paso para Obtener un Buen Diseño DTF</h4>
-                        <h4 className="mt-10">
+                        <h4 className="mt-10 font-bold">
                             Paso 1: Preparación del Archivo Digital
                         </h4>
                         <p>
@@ -967,7 +967,16 @@ const Curso = () => {
                             Dimensiones: Verifica que las medidas y proporciones
                             se ajusten al tamaño final de la prenda.
                         </p>
-                        <h4 className="mt-10">Paso 2: Impresión del Diseño</h4>
+                        <div className="imgContainer">
+                            <img
+                                src="/Images/curso/dtfB.png"
+                                alt="dtf"
+                                className="cursoImg max-h-[50dvh]"
+                            />
+                        </div>
+                        <h4 className="mt-10 font-bold">
+                            Paso 2: Impresión del Diseño
+                        </h4>
                         <p>
                             Envío del Archivo: Remite el archivo cumpliendo las
                             especificaciones técnicas indicadas (formato,
@@ -992,7 +1001,14 @@ const Curso = () => {
                             intervenciones o modificaciones adicionales en el
                             diseño durante el pegado, fomentando la creatividad.
                         </p>
-                        <h4 className="mt-10">
+                        <div className="imgContainer">
+                            <img
+                                src="/Images/curso/dtfA.png"
+                                alt="dtf"
+                                className="max-h-[50dvh]"
+                            />
+                        </div>
+                        <h4 className="mt-10 font-bold">
                             Pros y Contras de la Técnica DTF
                         </h4>
                         <p>Pros:</p>
@@ -1032,7 +1048,9 @@ const Curso = () => {
                                 inconvenientes en la impresión.
                             </li>
                         </ul>
-                        <h4 className="mt-10">Beneficios de la Técnica DTF</h4>
+                        <h4 className="mt-10 font-bold">
+                            Beneficios de la Técnica DTF
+                        </h4>
                         <p>
                             Flexibilidad Creativa: Permite desarrollar diseños
                             complejos y detallados que pueden ser fácilmente
@@ -1050,7 +1068,7 @@ const Curso = () => {
                             digitales y manuales, abriendo nuevas posibilidades
                             en el mundo del diseño textil.
                         </p>
-                        <h4 className="mt-10">
+                        <h4 className="mt-10 font-bold">
                             Posibles Aplicaciones del DTF Textil
                         </h4>
                         <p>

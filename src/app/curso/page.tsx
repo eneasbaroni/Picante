@@ -16,6 +16,7 @@ const links = [
     { href: "#magico", label: "MOMENTO MÁGICO" },
     { href: "#tinta", label: "MOMENTO TINTA" },
     { href: "#recuperar", label: "RECUPERAR/LAVAR" },
+    { href: "#dtf", label: "GUIA DTF" },
 ];
 
 const BackBtn = () => {
@@ -438,11 +439,13 @@ const Curso = () => {
                         <h4>Ahora si te quiero ver</h4>
                         <p>
                             Ahora, te toca ponerte creativ@, te invito a{" "}
-                            <span>CREAR UN DISEÑO</span> (Digital o Analógico).
-                            El día que asistas al taller, deberás traer tu
-                            diseño impreso o dibujado sobre PAPEL VEGETAL
-                            (Tendré diseños disponibles el día del taller, por
-                            si aún no tenés el tuyo).
+                            <span className="font-bold text-xl">
+                                CREAR UN DISEÑO
+                            </span>{" "}
+                            (Digital o Analógico). El día que asistas al taller,
+                            deberás traer tu diseño impreso o dibujado sobre
+                            PAPEL VEGETAL (Tendré diseños disponibles el día del
+                            taller, por si aún no tenés el tuyo).
                         </p>
                         <h4>ATENCIÓN</h4>
                         <p>
@@ -476,9 +479,7 @@ const Curso = () => {
                             Intentar, equivocarse, y seguir adelante.
                         </p>
 
-                        <button className="indiceBtn">
-                            <a href="#indice">Volver al índice</a>
-                        </button>
+                        <BackBtn />
                     </div>
 
                     <div id="crear" className="cursoModule">
@@ -940,6 +941,128 @@ const Curso = () => {
                             VOLVER A EMPEZAR
                         </h3>
                         <h4>¿Ya tenés tu nuevo diseño?</h4>
+
+                        <BackBtn />
+                    </div>
+                    <div id="dtf" className="cursoModule">
+                        <h3>DISEÑO DTF PARA INTERVENCIÓN TEXTIL</h3>
+                        <h4>Paso a Paso para Obtener un Buen Diseño DTF</h4>
+                        <h4 className="mt-10">
+                            Paso 1: Preparación del Archivo Digital
+                        </h4>
+                        <p>
+                            Software: Utiliza programas de diseño como
+                            Photoshop, Illustrator o CorelDRAW.
+                            <br />
+                            Resolución: Configura el diseño a 300 DPI para
+                            asegurar una alta calidad.
+                            <br />
+                            Espacio de Color: Usa el perfil RGB (según lo
+                            solicitado por el proveedor).
+                            <br />
+                            Fondo: Asegúrate de que el diseño tenga fondo
+                            transparente, permitiendo una mejor integración
+                            sobre la prenda.
+                            <br />
+                            Dimensiones: Verifica que las medidas y proporciones
+                            se ajusten al tamaño final de la prenda.
+                        </p>
+                        <h4 className="mt-10">Paso 2: Impresión del Diseño</h4>
+                        <p>
+                            Envío del Archivo: Remite el archivo cumpliendo las
+                            especificaciones técnicas indicadas (formato,
+                            tamaño, etc.).
+                            <br />
+                            Prueba de Impresión: Realiza una prueba para
+                            confirmar que los colores y detalles se reproducen
+                            correctamente en el soporte DTF.
+                            <br />
+                            Paso 3: Post-Proceso y Aplicación en la Prenda
+                            <br />
+                            Preparación del Diseño Impreso: Una vez impreso el
+                            diseño en el soporte DTF, este estará listo para su
+                            aplicación.
+                            <br />
+                            Aplicación Manual: En este taller, el proceso de
+                            adherencia se realizará de forma manual, permitiendo
+                            que los alumnos peguen e intervengan las prendas a
+                            su gusto.
+                            <br />
+                            Ajustes Creativos: Los alumnos podrán realizar
+                            intervenciones o modificaciones adicionales en el
+                            diseño durante el pegado, fomentando la creatividad.
+                        </p>
+                        <h4 className="mt-10">
+                            Pros y Contras de la Técnica DTF
+                        </h4>
+                        <p>Pros:</p>
+                        <ul className="[&>li]:list-disc [&>li]:ml-6">
+                            <li>
+                                Alta Calidad de Impresión: Reproduce diseños con
+                                gran detalle y colores vibrantes.
+                            </li>
+                            <li>
+                                Versatilidad: Se adapta a diferentes tipos de
+                                tejidos y prendas.
+                            </li>
+                            <li>
+                                Personalización: Ideal para tiradas cortas y
+                                proyectos creativos personalizados.
+                            </li>
+                            <li>
+                                Rapidez: Proceso ágil, ideal para talleres y
+                                producciones pequeñas.
+                            </li>
+                        </ul>
+
+                        <p className="mt-4">Contras:</p>
+                        <ul className="[&>li]:list-disc [&>li]:ml-6">
+                            <li>
+                                Inversión Inicial: Requiere equipos y
+                                consumibles específicos, lo que puede implicar
+                                un costo elevado.
+                            </li>
+                            <li>
+                                Dependencia Técnica: La calidad final depende de
+                                la calibración y el mantenimiento del equipo.
+                            </li>
+                            <li>
+                                Requisitos Técnicos: Los archivos deben cumplir
+                                especificaciones precisas para evitar
+                                inconvenientes en la impresión.
+                            </li>
+                        </ul>
+                        <h4 className="mt-10">Beneficios de la Técnica DTF</h4>
+                        <p>
+                            Flexibilidad Creativa: Permite desarrollar diseños
+                            complejos y detallados que pueden ser fácilmente
+                            intervenidos y personalizados.
+                            <br />
+                            Adaptabilidad: Es ideal para proyectos educativos y
+                            artísticos donde la creatividad es el centro del
+                            proceso.
+                            <br />
+                            Durabilidad: Los diseños obtenidos tienen buena
+                            adherencia y resistencia, manteniendo sus colores y
+                            detalles a lo largo del tiempo.
+                            <br />
+                            Innovación en Diseño Textil: Combina técnicas
+                            digitales y manuales, abriendo nuevas posibilidades
+                            en el mundo del diseño textil.
+                        </p>
+                        <h4 className="mt-10">
+                            Posibles Aplicaciones del DTF Textil
+                        </h4>
+                        <p>
+                            Moda Personalizada: Aplicable en camisetas,
+                            sudaderas, gorras y otros productos de moda.
+                            <br />
+                            Proyectos Artísticos: Ideal para intervenciones
+                            creativas y obras de arte en textil.
+                            <br />
+                            Merchandising y Promoción: Creación de productos
+                            promocionales para empresas, eventos o marcas.
+                        </p>
 
                         <BackBtn />
                     </div>

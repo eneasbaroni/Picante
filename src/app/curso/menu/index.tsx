@@ -11,6 +11,7 @@ const links = [
     { href: "#magico", label: "MOMENTO MÁGICO" },
     { href: "#tinta", label: "MOMENTO TINTA" },
     { href: "#recuperar", label: "RECUPERAR/LAVAR" },
+    { href: "#dtf", label: "GUIA DTF" },
 ];
 
 const Menu = () => {

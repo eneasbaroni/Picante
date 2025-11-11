@@ -99,6 +99,7 @@ const Curso = () => {
                                 autoPlay
                                 loop
                                 muted
+                                playsInline
                                 className="w-full rounded-2xl overflow-hidden"
                             >
                                 <source
@@ -819,6 +820,7 @@ const Curso = () => {
                                 autoPlay
                                 loop
                                 muted
+                                playsInline
                                 className="w-full rounded-2xl overflow-hidden"
                             >
                                 <source

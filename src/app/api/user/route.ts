@@ -33,3 +33,34 @@ export async function GET(req: NextRequest) {
         return NextResponse.json({ message: error.message })
     }
 }
+
+export async function PATCH(req: NextRequest) {
+    try {
+        const { email, role } = await req.json()
+        
+        if (!email || !role) {
+            return NextResponse.json({ message: 'Email and role are required' }, { status: 400 })
+        }
+
+        // Validar que el rol sea válido
+        const validRoles = ['user', 'vip', 'premium', 'admin']
+        if (!validRoles.includes(role)) {
+            return NextResponse.json({ message: 'Invalid role' }, { status: 400 })
+        }
+
+        await connectMongoDB()
+        const user = await User.findOneAndUpdate(
+            { email },
+            { role },
+            { new: true }
+        )
+
+        if (!user) {
+            return NextResponse.json({ message: 'User not found' }, { status: 404 })
+        }
+
+        return NextResponse.json({ message: 'User role updated successfully', user })
+    } catch (error: any) {
+        return NextResponse.json({ message: error.message }, { status: 500 })
+    }
+}

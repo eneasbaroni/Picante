@@ -24,21 +24,10 @@ const Info = () => {
         >
           <div className="w-full">
             <h2 className="text-center">HOLA :)</h2>
-            <p className="font-inter text-xl tablet:text-lg mobile:text-sm text-center text-balance w-1/2 tablet:w-3/4 m-auto">
-              Bienvenidos a tu destino para explorar el fascinante mundo de la
-              serigrafía, taller fundado en 2016.
-              <br />
-              En nuestro taller, nos enorgullecemos de ofrecer una experiencia
-              única donde la creatividad se fusiona con la técnica para dar vida
-              a diseños vibrantes y originales.
-              <br />
-              Espacio dedicado a inspirar y capacitar a artistas, emprendedores
-              y entusiastas de la serigrafía.
-            </p>
             <h3 className="mt-4 text-center text-2xl tablet:text-xl mobile:text-base">
               Esta es nuestra MISIÓN
             </h3>
-            <p className="font-inter text-xl tablet:text-lg mobile:text-sm text-center text-balance w-1/2 tablet:w-3/4 m-auto">
+            <p className="font-inter text-xl tablet:text-lg mobile:text-sm text-center text-balance w-3/4 m-auto">
               Ser el epicentro de la creatividad serigráfica de calidad. Unir a
               emprendedores, artistas y entusiastas, ofreciendo un espacio donde
               la técnica y la inspiración se encuentran.

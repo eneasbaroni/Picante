@@ -40,18 +40,6 @@ const Nosotros = () => {
             cada proyecto.
           </p>
 
-          <h3 className="text-left text-4xl my-4">VISIÓN</h3>
-          <p className="font-inter text-xl tablet:text-lg mobile:text-sm text-left text-balance w-full">
-            Nuestra visión, es que Picante® sea el lugar de referencia para la
-            serigrafía, actuando en dos frentes clave. Por un lado, ser un
-            espacio esencial de formación, donde las personas pueden aprender a
-            dominar el arte de la serigrafía con creatividad y alta calidad. Por
-            otro lado, ser el socio de confianza para empresas, emprendedores y
-            artistas, brindando un servicio de producción de piezas vibrantes,
-            originales y de excelente calidad. De esta forma, elevar la
-            serigrafía a un nuevo nivel de expresión artística y comercial.
-          </p>
-
           <h3 className="text-left text-4xl my-4">VALORES</h3>
           <p className="font-inter text-xl tablet:text-lg mobile:text-sm text-left">
             Sociales:
@@ -82,7 +70,7 @@ const Nosotros = () => {
               Creatividad: Fomentamos la imaginación e innovación.
             </li>
             <li className="font-inter text-xl tablet:text-lg mobile:text-sm text-left">
-              Capacitación: Empoderamos a traves del aprendizaje práctico.
+              Capacitación: Empoderamos a traves del aprendizaje práctico
             </li>
           </ul>
 
@@ -92,7 +80,7 @@ const Nosotros = () => {
           <ul className="pl-10">
             <li className="font-inter text-xl tablet:text-lg mobile:text-sm text-left">
               Sustentabilidad: Reducimos nuestro impacto, reutilizando,
-              reciclando y optimizando el uso de energía y recursos en cada proceso.
+              reciclando y optimizando el uso d
             </li>
           </ul>
         </div>

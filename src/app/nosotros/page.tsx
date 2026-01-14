@@ -82,7 +82,7 @@ const Nosotros = () => {
               Creatividad: Fomentamos la imaginación e innovación.
             </li>
             <li className="font-inter text-xl tablet:text-lg mobile:text-sm text-left">
-              Capacitación: Empoderamos a traves del aprendizaje práctico
+              Capacitación: Empoderamos a traves del aprendizaje práctico.
             </li>
           </ul>
 

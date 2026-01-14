@@ -29,15 +29,16 @@ const Nosotros = () => {
       </h2>
       <div className="flex flex-row tablet:flex-col items-center justify-center gap-4 mt-8">
         <div className="equipoInfo w-1/2 tablet:w-full" ref={infoRef}>
-          <h3 className="text-left text-4xl mb-4">MISIÓN</h3>
+          <h3 className="text-left text-4xl my-4">VISIÓN</h3>
           <p className="font-inter text-xl tablet:text-lg mobile:text-sm text-left text-balance w-full">
-            Empoderar la creatividad a través de la serigrafía. En Picante
-            Serigrafía, nuestra misión es ser el punto de encuentro para
-            artistas, emprendedores y entusiastas del diseño, ofreciendo un
-            espacio inspirador y formativo donde la técnica y la creatividad se
-            fusionan. Nos dedicamos a transformar ideas en creaciones vibrantes
-            y originales, fomentando la innovación y la expresión personal en
-            cada proyecto.
+            Nuestra visión, es que Picante® sea el lugar de referencia para la
+            serigrafía, actuando en dos frentes clave. Por un lado, ser un
+            espacio esencial de formación, donde las personas pueden aprender a
+            dominar el arte de la serigrafía con creatividad y alta calidad. Por
+            otro lado, ser el socio de confianza para empresas, emprendedores y
+            artistas, brindando un servicio de producción de piezas vibrantes,
+            originales y de excelente calidad. De esta forma, elevar la
+            serigrafía a un nuevo nivel de expresión artística y comercial.
           </p>
 
           <h3 className="text-left text-4xl my-4">VALORES</h3>

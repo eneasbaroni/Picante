@@ -42,7 +42,7 @@ const Nosotros = () => {
           </p>
 
           <h3 className="text-left text-4xl my-4">VALORES</h3>
-          <p className="font-inter text-xl tablet:text-lg mobile:text-sm text-left">
+          <p className="font-bold font-inter text-xl tablet:text-lg mobile:text-sm text-left">
             Sociales:
           </p>
           <ul className="pl-10">
@@ -51,7 +51,7 @@ const Nosotros = () => {
             </li>
           </ul>
 
-          <p className="font-inter text-xl tablet:text-lg mobile:text-sm text-left">
+          <p className="font-bold font-inter text-xl tablet:text-lg mobile:text-sm text-left">
             Éticos:
           </p>
           <ul className="pl-10">
@@ -63,7 +63,7 @@ const Nosotros = () => {
             </li>
           </ul>
 
-          <p className="font-inter text-xl tablet:text-lg mobile:text-sm text-left">
+          <p className="font-bold font-inter text-xl tablet:text-lg mobile:text-sm text-left">
             Servicio al cliente:
           </p>
           <ul className="pl-10">
@@ -75,13 +75,14 @@ const Nosotros = () => {
             </li>
           </ul>
 
-          <p className="font-inter text-xl tablet:text-lg mobile:text-sm text-left">
+          <p className="font-bold font-inter text-xl tablet:text-lg mobile:text-sm text-left">
             Ambientales:
           </p>
           <ul className="pl-10">
             <li className="font-inter text-xl tablet:text-lg mobile:text-sm text-left">
               Sustentabilidad: Reducimos nuestro impacto, reutilizando,
-              reciclando y optimizando el uso e energía y recursos en cada proceso.
+              reciclando y optimizando el uso e energía y recursos en cada
+              proceso.
             </li>
           </ul>
         </div>

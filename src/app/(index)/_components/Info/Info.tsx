@@ -32,7 +32,7 @@ const Info = () => {
               emprendedores, artistas y entusiastas, ofreciendo un espacio donde
               la técnica y la inspiración se encuentran.
               <br />
-              Buescamos transformar ideas en creaciones originales y vibrantes,
+              Buscamos transformar ideas en creaciones originales y vibrantes,
               cultivando la innovación y la expresión personal, con un
               compromiso inquebrantable con la exelencia en cada proyecto,
               integrando de forma inteligente las nuevas tecnologías para

@@ -71,7 +71,7 @@ const Nosotros = () => {
               Creatividad: Fomentamos la imaginación e innovación.
             </li>
             <li className="font-inter text-xl tablet:text-lg mobile:text-sm text-left">
-              Capacitación: Empoderamos a traves del aprendizaje práctico
+              Capacitación: Empoderamos a traves del aprendizaje práctico.
             </li>
           </ul>
 
@@ -81,7 +81,7 @@ const Nosotros = () => {
           <ul className="pl-10">
             <li className="font-inter text-xl tablet:text-lg mobile:text-sm text-left">
               Sustentabilidad: Reducimos nuestro impacto, reutilizando,
-              reciclando y optimizando el uso d
+              reciclando y optimizando el uso e energía y recursos en cada proceso.
             </li>
           </ul>
         </div>

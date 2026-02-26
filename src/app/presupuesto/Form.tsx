@@ -37,42 +37,42 @@ const Form = () => {
   const [loading, setLoading] = useState(false);
   const [file, setFile] = useState<File | null | undefined>(null);
 
-  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleFileChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const selectedFile = e.target.files?.[0];
 
     if (!selectedFile) {
       return;
     }
 
+    console.log("Archivo seleccionado:", selectedFile.name, selectedFile.size);
+
     // Validar tamaño del archivo
     if (selectedFile.size > 10000000) {
       e.target.value = ""; // Limpiar el input
       setFile(null);
-      setTimeout(() => {
-        Swal.fire({
-          icon: "error",
-          title: "Archivo demasiado grande",
-          text: "El archivo es demasiado grande (máx. 10MB)",
-          timer: 2500,
-          showConfirmButton: false,
-          timerProgressBar: true,
-        });
-      }, 100);
+      console.log("Archivo demasiado grande, mostrando alert de error");
+      await Swal.fire({
+        icon: "error",
+        title: "Archivo demasiado grande",
+        text: "El archivo es demasiado grande (máx. 10MB)",
+        timer: 2500,
+        showConfirmButton: false,
+        timerProgressBar: true,
+      });
       return;
     }
 
     // Archivo válido
     setFile(selectedFile);
-    setTimeout(() => {
-      Swal.fire({
-        icon: "success",
-        title: "Archivo cargado",
-        text: `"${selectedFile.name}" cargado exitosamente`,
-        timer: 2000,
-        showConfirmButton: false,
-        timerProgressBar: true,
-      });
-    }, 100);
+    console.log("Archivo válido, mostrando alert de éxito");
+    await Swal.fire({
+      icon: "success",
+      title: "Archivo cargado",
+      text: `"${selectedFile.name}" cargado exitosamente`,
+      timer: 2000,
+      showConfirmButton: false,
+      timerProgressBar: true,
+    });
   };
 
   const handleForm = async (e: React.FormEvent<HTMLFormElement>) => {

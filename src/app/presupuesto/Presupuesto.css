@@ -197,9 +197,14 @@
   .formularioContainer .formulario input:focus{    
     outline: none;
   }
+
+  .formularioContainer .formulario input:focus::placeholder,
+  .formularioContainer .formulario select:focus::placeholder {
+    opacity: 0;
+  }
   
   .formularioContainer .formulario input::placeholder{  
-    color: var(--main-color)
+    color: gray;
   }
   
   

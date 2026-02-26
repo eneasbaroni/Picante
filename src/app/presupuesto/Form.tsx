@@ -137,7 +137,7 @@ const Form = () => {
       {loading && <Loader />}
       <form className="formulario" onSubmit={handleForm}>
         {/* <legend>Formulario de Presupuesto</legend>    */}
-        <Input placeholder="NOMBRE" name="nombre" label="Nombre" type="text" />
+        <Input placeholder="NOMBREEE" name="nombre" label="Nombre" type="text" />
         <Input
           placeholder="APELLIDO"
           name="apellido"

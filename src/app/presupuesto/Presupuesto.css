@@ -156,6 +156,7 @@
     text-align: center;
     /* font-family: "Monument"; */  
     color:white;
+    cursor: pointer;
   }
   
   .formularioContainer .formulario input[type="file"]{

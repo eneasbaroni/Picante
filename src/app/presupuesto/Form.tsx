@@ -103,6 +103,7 @@ const Form = () => {
       if (res === "ok") {
         setLoading(false);
         Swal.fire({
+          icon: "success",
           html: "Gracias por tu consulta<BR/>Te responderemos luego de analizar tu proyecto",
           confirmButtonText: "VOLVER AL INICIO",
         });
@@ -183,7 +184,7 @@ const Form = () => {
 
         <>
           <label className="fileSelectorLabel" htmlFor="file">
-            ADJUNTE UNA IMAGEN DE REFERENCIA - MAX 10MB
+            {file ? `Imagen de referencia: ${file.name}` : "ADJUNTE UNA IMAGEN DE REFERENCIA - MAX 10MB"}
           </label>
           <input
             className="fileSelector"

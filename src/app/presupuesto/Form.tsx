@@ -2,40 +2,32 @@
 
 import Loader from "@/app/_components/Loader/Loader";
 import { useState } from "react";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
 import { handleSubmit } from "@/lib/actions";
 import Swal from "sweetalert2";
 import { useRouter } from "next/navigation";
+import { formSchema, FormValues } from "./FormSchema";
+import { SOPORTES } from "./constants";
 
-const Input = ({
-  placeholder,
-  name,
-  type,
-  label,
-}: {
-  placeholder: string;
-  name: string;
-  type: string;
-  label: string;
-}) => {
-  return (
-    <>
-      <label htmlFor={name}>{label}</label>
-      <input
-        required
-        placeholder={placeholder}
-        className="userInput"
-        type={type}
-        name={name}
-        id={name}
-      ></input>
-    </>
-  );
-};
+const ErrorMsg = ({ msg }: { msg?: string }) =>
+  msg ? <span className="error-msg">{msg}</span> : null;
+
 const Form = () => {
   const router = useRouter();
 
   const [loading, setLoading] = useState(false);
   const [file, setFile] = useState<File | null | undefined>(null);
+
+  const {
+    register,
+    handleSubmit: rhfHandleSubmit,
+    formState: { errors },
+  } = useForm<FormValues>({
+    resolver: zodResolver(formSchema),
+    mode: "onSubmit",
+    reValidateMode: "onChange",
+  });
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const selectedFile = e.target.files?.[0];
@@ -71,10 +63,10 @@ const Form = () => {
     });
   };
 
-  const handleForm = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setLoading(true);
-
+  const onSubmit = async (
+    _values: FormValues,
+    e?: React.BaseSyntheticEvent
+  ) => {
     // Validar si se cargó un archivo
     if (!file) {
       Swal.fire({
@@ -82,7 +74,6 @@ const Form = () => {
         title: "Oops...",
         text: "Debes adjuntar una imagen de referencia antes de enviar el formulario",
       });
-      setLoading(false);
       return;
     }
 
@@ -93,11 +84,12 @@ const Form = () => {
         title: "Oops...",
         text: "El archivo es demasiado grande, el tamaño máximo es de 10MB",
       });
-      setLoading(false);
       return;
     }
 
-    const data = new FormData(e.currentTarget);
+    setLoading(true);
+    const data = new FormData(e?.target as HTMLFormElement);
+
     try {
       const res = await handleSubmit(data);
       if (res === "ok") {
@@ -132,59 +124,110 @@ const Form = () => {
   return (
     <>
       {loading && <Loader />}
-      <form className="formulario" onSubmit={handleForm}>
-        {/* <legend>Formulario de Presupuesto</legend>    */}
-        <Input placeholder="NOMBRE" name="nombre" label="Nombre" type="text" />
-        <Input
+      <form
+        className="formulario"
+        onSubmit={rhfHandleSubmit(onSubmit)}
+        noValidate
+      >
+        <label htmlFor="nombre">Nombre</label>
+        <input
+          placeholder="NOMBRE"
+          className="userInput"
+          type="text"
+          id="nombre"
+          {...register("nombre")}
+        />
+        <ErrorMsg msg={errors.nombre?.message} />
+
+        <label htmlFor="apellido">Apellido</label>
+        <input
           placeholder="APELLIDO"
-          name="apellido"
-          label="Apellido"
+          className="userInput"
           type="text"
+          id="apellido"
+          {...register("apellido")}
         />
-        <Input
+        <ErrorMsg msg={errors.apellido?.message} />
+
+        <label htmlFor="telefono">Telefono</label>
+        <input
           placeholder="TELEFONO (sin guiones, sin 0 y sin 15)"
-          name="telefono"
-          label="Telefono"
+          className="userInput"
           type="text"
+          id="telefono"
+          {...register("telefono")}
         />
-        <Input placeholder="E-MAIL" name="email" label="Email" type="email" />
+        <ErrorMsg msg={errors.telefono?.message} />
+
+        <label htmlFor="email">Email</label>
+        <input
+          placeholder="E-MAIL"
+          className="userInput"
+          type="email"
+          id="email"
+          {...register("email")}
+        />
+        <ErrorMsg msg={errors.email?.message} />
+
         <label htmlFor="soporte">Soporte de Trabajo</label>
-        <select className="form-control mb-3" name="soporte" id="soporte">
-          <option>Tela</option>
-          <option>Papel</option>
-          <option>Carton</option>
-          <option>Chapa</option>
-          <option>Plastico</option>
-          <option>DTF (Direct transfer to film)</option>
+        <select
+          className="form-control mb-3"
+          id="soporte"
+          {...register("soporte")}
+        >
+          {SOPORTES.map((soporte) => (
+            <option key={soporte} value={soporte}>
+              {soporte}
+            </option>
+          ))}
         </select>
-        <Input
+        <ErrorMsg msg={errors.soporte?.message} />
+
+        <label htmlFor="medida">Medida del Trabajo</label>
+        <input
           placeholder="MEDIDA DEL TRABAJO EN cm"
-          name="medida"
-          label="Medida del Trabajo"
+          className="userInput"
           type="text"
+          id="medida"
+          {...register("medida")}
         />
-        <Input
+        <ErrorMsg msg={errors.medida?.message} />
+
+        <label htmlFor="cantidadColores">Cantidad de Colores</label>
+        <input
           placeholder="CANTIDAD DE COLORES EN ESTAMPA (máximo 5)"
-          name="cantidadColores"
-          label="Cantidad de Colores"
+          className="userInput"
           type="text"
+          id="cantidadColores"
+          {...register("cantidadColores")}
         />
-        <Input
+        <ErrorMsg msg={errors.cantidadColores?.message} />
+
+        <label htmlFor="cantidad">Cantidad de Copias</label>
+        <input
           placeholder="CANTIDAD DE COPIAS A REALIZAR"
-          name="cantidad"
-          label="Cantidad de Copias"
+          className="userInput"
           type="text"
+          id="cantidad"
+          {...register("cantidad")}
         />
-        <Input
+        <ErrorMsg msg={errors.cantidad?.message} />
+
+        <label htmlFor="descripcion">Breve Descripción</label>
+        <input
           placeholder="DESCRIPCION DEL TRABAJO A REALIZAR"
-          name="descripcion"
-          label="Breve Descripción"
+          className="userInput"
           type="text"
+          id="descripcion"
+          {...register("descripcion")}
         />
+        <ErrorMsg msg={errors.descripcion?.message} />
 
         <>
           <label className="fileSelectorLabel" htmlFor="file">
-            {file ? `Imagen de referencia: ${file.name}` : "ADJUNTE UNA IMAGEN DE REFERENCIA - MAX 10MB"}
+            {file
+              ? `Imagen de referencia: ${file.name}`
+              : "ADJUNTE UNA IMAGEN DE REFERENCIA - MAX 10MB"}
           </label>
           <input
             className="fileSelector"

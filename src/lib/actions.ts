@@ -1,5 +1,7 @@
 'use server'
-import sendMail from '@/middlewares/nodemailer'; 
+import sendMail from '@/middlewares/nodemailer';
+import { connectMongoDB } from '@/lib/mongodb';
+import Presupuesto from '@/app/api/DAO/models/presupuesto.models';
 
 
 const handleSubmit = async (formData: FormData) => {
@@ -13,6 +15,23 @@ const handleSubmit = async (formData: FormData) => {
 
     const bytes = await file.arrayBuffer();
     const buffer = Buffer.from(bytes);
+
+    try {
+        await connectMongoDB();
+        await Presupuesto.create({
+            nombre: data.nombre,
+            apellido: data.apellido,
+            telefono: data.telefono,
+            email: data.email,
+            soporte: data.soporte,
+            medida: data.medida,
+            cantidadColores: data.cantidadColores,
+            cantidad: data.cantidad,
+            descripcion: data.descripcion,
+        });
+    } catch (error) {
+        console.error('Error al registrar el presupuesto:', error);
+    }
 
     try {
         const res = await sendMail(data, buffer);

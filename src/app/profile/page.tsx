@@ -1,7 +1,9 @@
 "use client";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useSession, signIn, signOut } from "next-auth/react";
 import Link from "next/link";
+
+const FALLBACK_IMAGE = "/Images/Logo_Picante_chico.png";
 
 // Extend the default Session type to include 'role' in user
 declare module "next-auth" {
@@ -16,9 +18,11 @@ declare module "next-auth" {
 const Profile = () => {
   //const {data: session} = useSession({required: true})
   const { data: session, status } = useSession();
+  const [imgSrc, setImgSrc] = useState(FALLBACK_IMAGE);
 
   useEffect(() => {
     console.log("el estado de la sesion cambio", session);
+    setImgSrc(session?.user?.image || FALLBACK_IMAGE);
   }, [session]);
 
   return (
@@ -27,7 +31,11 @@ const Profile = () => {
         <>
           <h1>BIENVENIDO</h1>
           <h2>{session.user?.name}</h2>
-          <img src={session.user!.image!} alt="profile img" />
+          <img
+            src={imgSrc}
+            alt="profile img"
+            onError={() => setImgSrc(FALLBACK_IMAGE)}
+          />
           {/* @ts-ignore */}
           {session.user!.role &&
           (session.user!.role === "admin" ||

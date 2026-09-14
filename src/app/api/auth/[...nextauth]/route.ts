@@ -47,9 +47,14 @@ const handler = NextAuth({
               headers: { 'Content-Type': 'application/json' },              
             })
             if (res.ok) {
-              const userData = await res.json()              
+              const userData = await res.json()
               //@ts-ignore
               session.user.role = userData.role
+              // Google no siempre devuelve foto de perfil (o el token puede no traerla);
+              // si Mongo tiene una guardada del primer login, se usa como respaldo.
+              if (!session.user!.image && userData.image) {
+                session.user!.image = userData.image
+              }
               return session
             } else {
               return session

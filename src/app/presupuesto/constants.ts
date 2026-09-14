@@ -1,0 +1,8 @@
+export const SOPORTES = [
+    "Tela",
+    "Papel",
+    "Carton",
+    "Chapa",
+    "Plastico",
+    "DTF (Direct transfer to film)",
+] as const;

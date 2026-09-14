@@ -2,12 +2,6 @@ import Image from "next/image";
 import Form from "./Form";
 
 const Presupuesto = () => {
-    // Expresiones regulares para los campos del formulario
-    const nombreRegex = /^[\s\S]{2,25}$/i;
-    const apellidoRegex = /^[\s\S]{2,25}$/i; // eslint-disable-next-line
-    const telefonoRegex = /^[+()0-9\- ]*$/im; // eslint-disable-next-line
-    const emailRegex = /^[\w_\.-]+@[\w\.-]+\.[a-z\.]{2,6}$/i;
-
     return (
         <main className="formularioContainer">
             <h1 className=" mx-0 my-4 mobile:mt-16">

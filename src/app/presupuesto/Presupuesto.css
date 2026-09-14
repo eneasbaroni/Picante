@@ -195,8 +195,21 @@
     border-bottom: solid 3px var(--main-color);  
   }
   
-  .formularioContainer .formulario input:focus{    
+  .formularioContainer .formulario input:focus{
     outline: none;
+  }
+
+  .formularioContainer .formulario .error-msg{
+    grid-column: 1 / span 12;
+    display: block;
+    color: var(--second-color);
+    font-size: 0.85rem;
+    text-align: center;
+    padding: 0.25rem 0.5rem;
+    margin-top: -0.15rem;
+    border-left: solid 3px var(--main-color);
+    border-right: solid 3px var(--main-color);
+    background-color: rgba(161, 22, 25, 0.06);
   }
 
   .formularioContainer .formulario input:focus::placeholder,

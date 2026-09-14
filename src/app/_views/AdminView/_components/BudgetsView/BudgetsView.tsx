@@ -128,6 +128,12 @@ export const BudgetsView = () => {
                                 Soporte
                             </th>
                             <th className="text-left p-3 border border-black">
+                                Colores
+                            </th>
+                            <th className="text-left p-3 border border-black">
+                                Copias
+                            </th>
+                            <th className="text-left p-3 border border-black">
                                 Fecha
                             </th>
                             <th className="text-left p-3 border border-black">

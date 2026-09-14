@@ -44,6 +44,18 @@ export const PresupuestoCard = ({
           </p>
         </div>
       </div>
+
+      <div className="flex justify-between items-center">
+        <div>
+          <p className="text-xs text-gray-600">Colores</p>
+          <p className="text-sm">{presupuesto.cantidadColores}</p>
+        </div>
+
+        <div className="text-right">
+          <p className="text-xs text-gray-600">Copias</p>
+          <p className="text-sm">{presupuesto.cantidad}</p>
+        </div>
+      </div>
     </div>
   );
 };

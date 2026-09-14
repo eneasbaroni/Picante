@@ -18,6 +18,12 @@ export const PresupuestoRow = ({
       </td>
       <td className="p-3 border border-black">{presupuesto.email}</td>
       <td className="p-3 border border-black">{presupuesto.soporte}</td>
+      <td className="p-3 border border-black text-center">
+        {presupuesto.cantidadColores}
+      </td>
+      <td className="p-3 border border-black text-center">
+        {presupuesto.cantidad}
+      </td>
       <td className="p-3 border border-black">
         {new Date(presupuesto.createdAt).toLocaleDateString("es-ES")}
       </td>

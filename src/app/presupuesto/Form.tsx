@@ -185,7 +185,7 @@ const Form = () => {
 
         <label htmlFor="medida">Medida del Trabajo</label>
         <input
-          placeholder="MEDIDA DEL TRABAJO EN cm"
+          placeholder="MEDIDA DEL TRABAJO EN cm - Ej: 50x30"
           className="userInput"
           type="text"
           id="medida"
